@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Add Student</title>
+        <link rel="stylesheet" href="styleS.css">
+    </head>
+    <body>
+
+<div class="container">
+
+    <h1>Student Placement Management System</h1>
+    <button id="themeBtn">Dark Mode</button>
+    <h1>Add Student</h1>
+
+    <div class="top-section">
+
+        <!-- FORM SECTION -->
+        <div class="form-section">
+
+            <form>
+
+                <label>Student Name</label><br><br>
+                <input type="text" id="name"><br><br>
+
+                <label>Roll Number</label><br><br>
+                <input type="text" id="roll"><br><br>
+
+                <label>Branch</label><br><br>
+                <input type="text" id="branch"><br><br>
+
+                <label>CGPA</label><br><br>
+                <input type="number" id="cgpa"><br><br>
+
+                <label>Skills</label><br><br>
+                <input type="text" id="skills"><br><br>
+
+                <label>Placement Status</label><br><br>
+                <select id="status">
+                    <option value="Placed">Placed</option>
+                    <option value="Not Placed">Not Placed</option>
+                </select>
+                <br><br>
+
+                <label>Company Name</label><br><br>
+                <input type="text" id="company"><br><br>
+
+                <p id="message"></p>
+
+                <button id="addBtn">Add Student</button>
+
+            </form>
+
+            <h3>Search Student</h3>
+            <input type="text" id="searchBox" placeholder="Enter Student Name">
+            <button id="searchBtn">Search</button>
+
+            <h3>Filter by CGPA</h3>
+            <input type="number" id="cgpaFilter" placeholder="Enter Minimum CGPA">
+            <button id="filterBtn">Filter</button>
+
+            <br><br>
+
+            <button id="countBtn">Count Students</button>
+            <p id="studentCount"></p>
+
+            <button id="sortBtn">Sort By CGPA</button>
+            <button id="exportBtn">Export CSV</button>
+
+            <button id="resetBtn">Reset Filters</button>
+
+        </div>
+
+        <!-- DASHBOARD SECTION -->
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Placed Students</h3>
+                <p id="placedStudents">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Not Placed Students</h3>
+                <p id="notPlacedStudents">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Average CGPA</h3>
+                <p id="averageCGPA">0</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2>Student List</h2>
+
+    <table border="1" id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Branch</th>
+            <th>CGPA</th>
+            <th>Skills</th>
+            <th>Placement Status</th>
+            <th>Company</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p>Student Placement Management System</p>
+    <p>Developed by Rangari Hamsa</p>
+</footer>
+
+</html>
